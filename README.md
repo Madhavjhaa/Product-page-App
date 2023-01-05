@@ -20,12 +20,18 @@ Installation
 Clone the repo and change the directory
 
 git clone https://github.com/Madhavjhaa/Product-page-App.git
+
+
 cd Product-page-App
+
 Install NPM packages
+
 npm install
-Create your .env.local file on root folder(Product-page-App) with this content. Put your firebase keys.
+
+Create your .env.local file on root folder(Product-page-App) with this content. 
 
 Run in development mode
+
 npm run dev
 
 see the project here:-https://stately-tapioca-1e6aae.netlify.app

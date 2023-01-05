@@ -6,7 +6,7 @@ single page application made using:-
 - Netlify
 - Git
 
-project link deployed on netlify:- https://stately-tapioca-1e6aae.netlify.app/
+project link deployed on netlify:-  https://63b716ad84c62f00774acc39--stately-tapioca-1e6aae.netlify.app/
 
 
 Getting Started
@@ -34,6 +34,6 @@ Run in development mode
 
 npm run dev
 
-see the project here:-https://stately-tapioca-1e6aae.netlify.app
+see the project here:-https://63b716ad84c62f00774acc39--stately-tapioca-1e6aae.netlify.app/
 
   

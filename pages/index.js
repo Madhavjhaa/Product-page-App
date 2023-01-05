@@ -16,7 +16,6 @@ export default function Home() {
   const [data, setData] = useState([]);
 
   useEffect(()=>{
-
     axios.get('https://api.tjori.com/api/v7filters/na/women-all-products/?f_page=1&format=json').then(response => {
       setData(response.data.data.products)
       console.log("pdata",data);
@@ -67,7 +66,7 @@ export default function Home() {
         <div id="productdiv">
           <div id="topnavf">
             <div id="leftside">Bags • Bag Packs</div>
-            <div id="leftside">{data.length} Products</div>
+            <div id="leftside">{data .length} Products</div>
           </div>
 
 
@@ -81,7 +80,7 @@ export default function Home() {
             <div id="productname">{p.name}</div>
             <div id="topnavprice">
               <div id="left">
-              ₹ {p.price}<del id='dis'> 8999</del><div id="discount">(50% Off)</div>
+              ₹ {p.price/2}<del id='dis'> {p.price}</del><div id="discount">(50% Off)</div>
               </div>
               <div id="right">
               <img id='pimgcart' src="./cart.png" />
@@ -90,35 +89,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-            
-            
-            
-            
-            
-            
             );
           })}
-
-            
-            
-
-          
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
           
         </div>
       </main>
+
 
 
 
@@ -264,21 +241,18 @@ export default function Home() {
         width: 100%;
         height: 56px;
         font-family: 'Encode Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 19.4988px;
-line-height: 26px;
-color: white;
-
-
-letter-spacing: 0.05em;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19.4988px;
+        line-height: 26px;
+        color: white;
+        letter-spacing: 0.05em;
       }
       #product {
         width: 288px;
         height: 545px;
         display:flex;;
         flex-direction: column;
-      
         margin: 8px;
         position: relative;
         cursor: pointer;

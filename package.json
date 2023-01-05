@@ -5,6 +5,7 @@
     "build": "next build && next export",
     "start": "next start"
   },
+  
   "dependencies": {
     "next": "latest",
     "react": "18.2.0",

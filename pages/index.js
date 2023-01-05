@@ -1,14 +1,12 @@
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import React, { useState } from 'react';
 import axios from 'axios';
 import Icon from '@mdi/react'
 import { FaBeer } from "react-icons/fa";
- 
 import { BsHandbag,BsSave } from "react-icons/Bs";
-AiOutlineSearch
 import { AiOutlineSearch} from "react-icons/Ai";
 import { mdiAccount } from '@mdi/js'
-MdAccountCircle
+
 import { MdAccountCircle } from "react-icons/Md";
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" />
 export default function Home() {
@@ -17,13 +15,15 @@ export default function Home() {
  
   const [data, setData] = useState([]);
 
-  axios.get('https://api.tjori.com/api/v7filters/na/women-all-products/?f_page=1&format=json').then(response => {
-  let pdata = []
-  pdata = response.data.data.products;
-  setData(pdata)
-  console.log("pdata",data);
-  console.log("data",data);
-});
+  useEffect(()=>{
+
+    axios.get('https://api.tjori.com/api/v7filters/na/women-all-products/?f_page=1&format=json').then(response => {
+      setData(response.data.data.products)
+      console.log("pdata",data);
+      console.log("data",data);
+    })
+
+  },[])
 
   return (
 

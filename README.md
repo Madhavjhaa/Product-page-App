@@ -11,7 +11,7 @@ project link deployed on netlify:- https://stately-tapioca-1e6aae.netlify.app/
 
 Getting Started
 
-Prerequisites
+Prerequisites:-
 
 Node.js version 18.9 or later
 Git 

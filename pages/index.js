@@ -38,7 +38,7 @@ export default function Home() {
         <div id="nav">
           <div id="topnav">
             <div id="left">TANN TRIM</div>
-            <div id="right"><AiOutlineSearch/> <MdAccountCircle /> <BsSave/> <BsHandbag/> <span class="mdi-star"></span></div>
+            <div id="right"><AiOutlineSearch/> <MdAccountCircle /> <BsSave/> <BsHandbag/> <span className="mdi-star"></span></div>
           </div>
           <div id="bottomnav">
             <div id="bottomitem">bags</div>
